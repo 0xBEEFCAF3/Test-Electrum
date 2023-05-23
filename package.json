@@ -1,0 +1,16 @@
+{
+  "name": "test_esplora",
+  "version": "1.0.0",
+  "description": "",
+  "main": "test_esplora.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bitcoinjs-lib": "^6.1.0",
+    "electrum-client": "^0.0.6",
+    "yargs": "^17.7.2"
+  }
+}
