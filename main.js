@@ -4,8 +4,7 @@
 /* eslint-disable no-console */
 
 // Description: This script serves to test all vault Electrum use cases.
-// Code borrowed from https://github.com/Casa/perf-test
-// TODO the only use case missing is getting block headers.
+// TODO Missing is getting block headers.
 // Example call: ./main.js --host 54.164.37.249 --port 50001 --ssl --testnet
 
 const ElectrumCli = require('electrum-client')
@@ -34,9 +33,9 @@ const fundedTestnetAddress = 'tb1q7j32ycv2nan30y2jzug6lats2a9r7yjnqsx59f'
 const testnetScriptHash = getScriptHash(fundedTestnetAddress)
 const testnetTxId = '89cdf6fde736a06949ec61a213159e43f742a34fb66d8f1495c7085634205c2b'
 
-const fundedMainnetAddress = '3HE4MHdDB8qeA8FEG1MgftqxCGNkETmrS2'
+const fundedMainnetAddress = '37HMmfnCiHYKoY8cvXAGTXHgXoQHWTuGpP'
 const mainnetScriptHash = getScriptHash(fundedMainnetAddress)
-const mainnetTxId = '46f2864b2a10458c77e345f49b9d224fd582f9645e7c6a06b768bd3be40733fd '
+const mainnetTxId = '4856ea15c34c0b1f4f2c64b3f564ba395d801f32d0817a0d27ff5f52d30eb6a7'
 
 
 // Parse CLI parameters
