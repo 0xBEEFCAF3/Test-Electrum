@@ -4,7 +4,6 @@
 /* eslint-disable no-console */
 
 // Description: This script serves to test all vault Electrum use cases.
-// TODO Missing is getting block headers.
 // Example call: ./main.js --host 54.164.37.249 --port 50001 --ssl --testnet
 
 const ElectrumCli = require('electrum-client')
@@ -105,7 +104,7 @@ const main = async () => {
     throw new Error();
   }
   try {
-    const ver = await ecl.server_version('Casa Test', '1.4')
+    const ver = await ecl.server_version('Test', '1.4')
     console.log(`Version: ${ver}`)
     const feeHigh = await ecl.blockchainEstimatefee(1)
     console.log(`Fee estimate 1 blocks: ${feeHigh}`)
