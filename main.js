@@ -149,7 +149,7 @@ const main = async () => {
 
     const merkelPath = await ecl.blockchainTransaction_getMerkle(
       argv.testnet ? testnetTxId : mainnetTxId,
-      argv ? testnetTxBlockHeight : mainnetTxBlockHeight,
+      argv.testnet ? testnetTxBlockHeight : mainnetTxBlockHeight,
     );
     console.log(
       `Merkel path for txid : ${JSON.stringify(merkelPath, null, 2)}`
