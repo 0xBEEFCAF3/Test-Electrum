@@ -74,8 +74,7 @@ const argv = yargs
 
 // Update configuration
 const electrumHost = argv.host;
-// const electrumNetwork = argv.testnet ? 'testnet' : 'mainnet'
-const electrumPort = "50001";
+const electrumPort = argv.port;
 const electrumProto = argv.ssl ? "tls" : "tcp";
 
 function getScriptHash(address) {
